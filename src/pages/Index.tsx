@@ -119,8 +119,8 @@ const Index = () => {
                       <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
                       <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
                     </div>
-                    <p className="text-sm text-gray-700">Отличный преподаватель! Объясняет понятно и доступно.</p>
-                    <p className="text-xs text-gray-500 mt-2">— Студент 3 курса</p>
+                    <p className="text-sm text-gray-700">Отличный преподаватель и отличный куратор у группы Д25</p>
+                    <p className="text-xs text-gray-500 mt-2">— Студент 1 курса</p>
                   </div>
                   
                   <div className="p-3 bg-gray-50 rounded-lg">
