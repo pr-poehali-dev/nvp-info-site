@@ -12,10 +12,10 @@ const Index = () => {
           <div className="w-80">
             <img 
               src="https://cdn.poehali.dev/files/6aee3449-eeed-44d0-8d74-686d7865ed07.png" 
-              alt="Клименова Елена Викторовна"
+              alt="Клейменова Елена Викторовна"
               className="w-full h-auto rounded-2xl shadow-xl"
             />
-            <h2 className="text-2xl font-bold mt-4 text-gray-800">Клименова Елена Викторовна</h2>
+            <h2 className="text-2xl font-bold mt-4 text-gray-800">Клейменова Елена Викторовна</h2>
           </div>
         </div>
       </div>
