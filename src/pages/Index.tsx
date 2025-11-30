@@ -300,12 +300,12 @@ const Index = () => {
                       <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
                       <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
                       <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
-                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-gray-300 text-gray-300" />
                     </div>
                     <p className="text-sm text-gray-700 leading-relaxed">
-                      Отличный преподаватель! Всегда готова помочь и ответить на вопросы.
+                      Преподаватель хоть и строгий, но хороший. На ее паре легко можно заработать хорошую оценку, достаточно просто прочитать и написать лекции, которые она дает, она не сильно придирчивая к словам, но если на ее парах будет плохое поведение, она запомнит.
                     </p>
-                    <p className="text-xs text-gray-500 mt-2">— Студент 2 курса</p>
+                    <p className="text-xs text-gray-500 mt-2">— Студент 1 курса</p>
                   </div>
                 </CardContent>
               </Card>
