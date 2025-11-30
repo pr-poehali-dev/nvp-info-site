@@ -16,6 +16,10 @@ const Index = () => {
   const [showReviews3, setShowReviews3] = useState(false);
   const [showAbout3, setShowAbout3] = useState(false);
   
+  const [showInfo4, setShowInfo4] = useState(false);
+  const [showReviews4, setShowReviews4] = useState(false);
+  const [showAbout4, setShowAbout4] = useState(false);
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-orange-50">
       <div className="pt-16 text-center mb-12">
@@ -447,6 +451,136 @@ const Index = () => {
                       Преподаватель высшей категории с большим опытом работы в сфере образования. Ведёт курсы по математике и информатике для студентов. Активно внедряет в учебный процесс современные IT-технологии и проектные методики.
                     </p>
                     <p className="text-xs text-gray-500 mt-2">— Студент 3 курса</p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+          </div>
+          
+          <div className="w-80">
+            <img 
+              src="https://cdn.poehali.dev/files/93fbcf03-97fd-400b-bcf1-c0e097691ff3.png" 
+              alt="Ковалева Софья Александровна"
+              className="w-full h-80 object-cover rounded-2xl shadow-xl"
+            />
+            <h2 className="text-2xl font-bold mt-4 text-gray-800">Ковалева Софья Александровна</h2>
+            <Button 
+              onClick={() => setShowInfo4(!showInfo4)}
+              className="mt-4 w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90"
+            >
+              <Icon name="Info" size={18} className="mr-2" />
+              Узнать информацию
+            </Button>
+            
+            {showInfo4 && (
+              <Card className="mt-4 border-2 border-primary/20 shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-lg">Информация о преподавателе</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <Icon name="Briefcase" size={18} className="text-primary mt-1" />
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">Должность</p>
+                      <p className="text-sm text-gray-600">Преподаватель биологии и информатики</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Icon name="Building" size={18} className="text-secondary mt-1" />
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">Кафедра</p>
+                      <p className="text-sm text-gray-600">НВПИ НИЯУ МИФИ</p>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-3 space-y-2">
+                    <Button 
+                      onClick={() => setShowAbout4(!showAbout4)}
+                      variant="outline"
+                      className="w-full border-primary/30 hover:bg-primary/10"
+                    >
+                      <Icon name="User" size={16} className="mr-2" />
+                      Про преподавателя
+                    </Button>
+                    
+                    <Button 
+                      onClick={() => setShowReviews4(!showReviews4)}
+                      variant="outline"
+                      className="w-full border-secondary/30 hover:bg-secondary/10"
+                    >
+                      <Icon name="MessageCircle" size={16} className="mr-2" />
+                      Отзывы
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+            
+            {showAbout4 && (
+              <Card className="mt-4 border-2 border-accent/20 shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-lg flex items-center gap-2">
+                    <Icon name="User" size={20} className="text-accent" />
+                    Про преподавателя
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    Куратор учебных групп, преподаватель биологии и информатики. Создаёт доброжелательную атмосферу на занятиях, помогает студентам разобраться в сложных темах. Использует интересные примеры из жизни для объяснения материала.
+                  </p>
+                </CardContent>
+              </Card>
+            )}
+            
+            {showReviews4 && (
+              <Card className="mt-4 border-2 border-secondary/20 shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-lg flex items-center gap-2">
+                    <Icon name="MessageCircle" size={20} className="text-secondary" />
+                    Отзывы студентов
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="p-3 bg-gray-50 rounded-lg">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    </div>
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      Дорогой учитель биологии! Спасибо вам огромное за ваше терпение, внимание и вдохновение, которое вы дарите каждому ученику. Мы благодарны вам за каждую лекцию. Вы лучший учитель биологии, любим Вас!
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2">— Студент</p>
+                  </div>
+                  
+                  <div className="p-3 bg-gray-50 rounded-lg">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    </div>
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      Софья Александровна лучший куратор в техе, прекрасный преподаватель биологии и информатики.
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2">— Студент группы</p>
+                  </div>
+                  
+                  <div className="p-3 bg-gray-50 rounded-lg">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                      <Icon name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    </div>
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      Ковалева — хороший преподаватель, многого не требует, хорошо рассказывает лекции, рассказывает истории на паре, объясняет если не понятно, может намекнуть на правильный ответ, только вот за опоздание приходится стихи рассказывать.
+                    </p>
+                    <p className="text-xs text-gray-500 mt-2">— Студент 2 курса</p>
                   </div>
                 </CardContent>
               </Card>
