@@ -26,7 +26,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/6aee3449-eeed-44d0-8d74-686d7865ed07.png" 
               alt="Клейменова Елена Викторовна"
-              className="w-full h-auto rounded-2xl shadow-xl"
+              className="w-full h-80 object-cover rounded-2xl shadow-xl"
             />
             <h2 className="text-2xl font-bold mt-4 text-gray-800">Клейменова Елена Викторовна</h2>
             <Button 
@@ -207,7 +207,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/cf6e3385-3683-424d-a654-452c978b8a45.png" 
               alt="Кочеткова Марина Валерьевна"
-              className="w-full h-auto rounded-2xl shadow-xl"
+              className="w-full h-80 object-cover rounded-2xl shadow-xl"
             />
             <h2 className="text-2xl font-bold mt-4 text-gray-800">Кочеткова Марина Валерьевна</h2>
             <Button 
